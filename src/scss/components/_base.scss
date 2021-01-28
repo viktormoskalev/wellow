@@ -25,6 +25,7 @@ html , body{
   font-family: 'Roboto', sans-serif;
 }
 
+
 .mw-543{
   max-width:543px !important ;
 }
@@ -84,7 +85,9 @@ figure{
 
   
 }
-@media screen and (min-width: $breakpoint-xxl){
+@media screen and (max-width: $breakpoint-l){
 
-  
+  .order1-s{
+    order:1 !important;
+  }
 }

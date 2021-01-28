@@ -2,7 +2,9 @@
     display: flex;
     flex-wrap: wrap;
   }
-
+.grid-item{
+  order: 0;
+}
   .grid-m{
     justify-content: center;
     margin:0 -20px;
@@ -10,13 +12,7 @@
       padding:0 20px;
     }
   }
-  .grid-l{
-   
-    margin:0 -50px;
-    .grid-item{
-      padding:0 50px;
-    }
-  }
+
 
   @media screen and (min-width: $breakpoint-m){
 
@@ -25,7 +21,13 @@
   
   @media screen and (min-width: $breakpoint-l){
   
-    
+    .grid-l{
+   
+      margin:0 -50px;
+      .grid-item{
+        padding:0 50px;
+      }
+    }
   }
   
   @media screen and (min-width: $breakpoint-xl){

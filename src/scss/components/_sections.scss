@@ -226,12 +226,7 @@ letter-spacing: -0.8px;
             
         }
     }
-.section-hero{
-    text-align: left;
-    .section-title{
-        margin-top: 130px;
-    }
-}
+
 
 
     .section-platform{
@@ -250,7 +245,12 @@ letter-spacing: -0.8px;
 }
 
 @media screen and (min-width: $breakpoint-xl){
-
+    .section-hero{
+        text-align: left;
+        .section-title{
+            margin-top: 130px;
+        }
+    }
 
 
     .section-hero{
