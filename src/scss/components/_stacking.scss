@@ -1,8 +1,7 @@
 
 
-@media screen and (max-width: $breakpoint-m){
+@media screen and (max-width: $breakpoint-xl){
   .js-stack-cards__item{
-    background-color: #fff;
         position: sticky;
         top:100px;
     overflow: hidden;
@@ -18,7 +17,7 @@
     }
   
 }
-@media screen and (min-width: $breakpoint-m){
+@media screen and (min-width: $breakpoint-xl){
   .js-stack-cards__item{
       transform: none;
     }

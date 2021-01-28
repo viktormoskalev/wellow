@@ -411,7 +411,9 @@ Math.easeInOutQuad = function (t, b, c, d) {
 
 }
 
+try{
+  stacking();
+} catch{
+  
+}
 
-
-
-stacking();

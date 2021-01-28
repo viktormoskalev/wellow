@@ -3,21 +3,6 @@ $main-button:#E9484C;
 $main-button-hover:darken($main-button,20%);
 
 
-// @keyframes radial-pulse {
-//     0% {
-//       box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.5);
-//     }
-   
-//     100% {
-//       box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
-//     }
-//   }
-  
-
-//   .pulse{
-//     animation: radial-pulse 1s infinite;
-//   }
-
 
 .button{
     width: 100%;
@@ -28,7 +13,13 @@ $main-button-hover:darken($main-button,20%);
     color:white;
     border-radius: 10px;
     padding: 17px 17px;
+    scroll-behavior: smooth;
     cursor: pointer;
+
+  }
+
+  .button-shadow{
+    box-shadow: 0px 2px 38px 2px rgba(122, 59, 59, 0.34);
   }
   
   .button-arrow-right{

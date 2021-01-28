@@ -112,18 +112,9 @@ flex-direction: column;
     line-height: 30px;
            }
     }
-  
-
-
-.card-description-compress{
-    display: flex;
-    width:max-content;
-    flex-wrap: wrap;
-    flex-direction: column;
-    max-width: 100%;
-    
-    }
 }
+
+
 @media screen and (min-width: $breakpoint-xxl){
 
   

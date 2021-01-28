@@ -3,13 +3,14 @@ $breakpoint-s:320px;
 $breakpoint-m:480px;
 $breakpoint-l:767px;
 $breakpoint-xl:991px;
-$breakpoint-xxl:1200px;
+$breakpoint-xxl:1400px;
 
 body{
   background-color: rgb(199, 199, 199);
   // for popup noscroll
   font-family: Inter;
-  scroll-behavior: smooth;
+
+scroll-behavior: smooth;
 }
 
 .wrapper{
@@ -31,11 +32,12 @@ html , body{
 }
 
 * {
+  scroll-behavior: smooth;
   box-sizing: border-box;
 }
 
  .dark-color{
-   color:#323232 !important;
+   color:rgba(40, 36, 83, 1) !important;
  }
 
 a{
@@ -85,7 +87,7 @@ figure{
 
   
 }
-@media screen and (max-width: $breakpoint-l){
+@media screen and (max-width: $breakpoint-xl){
 
   .order1-s{
     order:1 !important;

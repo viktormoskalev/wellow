@@ -21,6 +21,7 @@ $nav-hover-color:rgb(255, 255, 255);
     }
 
     &-item {
+        cursor: pointer;
         display: block;
         padding: 11px 12px;
         border-radius: 10px;

@@ -8,7 +8,7 @@ window.onload= function(){
 
 }
 
-// мобильное меню
+//mobile menu
 nav = document.querySelector(".nav");
 document.querySelector(".btn-menu").addEventListener("click" , togglenav);
 document.querySelector(".nav-menu").onclick = closenav;
@@ -31,7 +31,7 @@ if(nav.classList.contains("nav-open")){
   btnMenu.style.marginRight="0";
 }
 }
-// мобильное меню
+// mobile menu
 
 // popup
 popup = document.querySelector(".popup");
@@ -73,7 +73,7 @@ function closepopup() {
 // popup
 
 
-// отключить прокрутку
+// noscroll
 function hidescroll(){
   body.style.paddingRight=window.innerWidth-html.offsetWidth +"px";
   body.style.overflow="hidden";
@@ -97,24 +97,24 @@ function togglescroll(){
   }
 }
 
-// отключить прокрутку
+// no scroll
 
 
 
 
 
 
- // Появление меню при прокрутке
+ //sticky header
 
 
 function pagescroll(){
-  header.classList.add("fixed-header"); //меняем хедер со статика на фиксед только после загрузки страници
-  hplace=document.querySelector(".header-place"); // вместо падинга на боди используем пустой блок
-  let headerheight=header.offsetHeight+"px"; //получаем текущую высоту хедера
-  hplace.style.height=headerheight;  //задаем пустому блоку высоту хедера
+  header.classList.add("fixed-header"); 
+  hplace=document.querySelector(".header-place"); 
+  let headerheight=header.offsetHeight+"px"; 
+    hplace.style.height=headerheight; 
   window.addEventListener('resize', function(event){
     if(headerheight!==header.offsetHeight+"px"){
-   //меняем высоту пустого блока только если изменилась высота хедера
+
       headerheight=header.offsetHeight+"px";
       hplace.style.height=headerheight;
     }
@@ -125,47 +125,56 @@ function pagescroll(){
    
    
       if (pscroll<pageYOffset&pageYOffset>header.offsetHeight){
-               header.style.transform="translateY(-100%)"; //прячем хедер при прокрутке вниз    
+               header.style.transform="translateY(-100%)";   
               
        }else {
     
-           header.style.transform="none"; //показываем хедер при прокрутке вверх  
+           header.style.transform="none"; 
          
        }  
    pscroll=pageYOffset;
  });
 }
 
- //Появление меню при прокрутке
+ //sticky header
 
 
 
 
 
 
-//отправка формы 
+//form
 
 
 
 
 
-let form = document.querySelectorAll('.order-form');
+let form = document.querySelectorAll('.popup');
 
-const modal = document.getElementById("modal");
 
 function ajaxform(evt) {
-  gtag('event', 'submit', {
-    'event_category': 'Form'
-  });
   evt.preventDefault();
-  let formstatus = this.querySelector('.formstatus');
-  formstatus.innerHTML = '<class="load-form">Соедиенеие ...';
+  let formstatus = this.querySelector('.progress');
+  formstatus.innerHTML = '<class="load-form">Connecting ...';
+  let info = "";
+  info+= " \n ";
+  info+="Message :" + this.querySelector('.message').value;
+  info+= " \n ";
+if (this.querySelector('#no').checked){
+  info+= "care clinic: " + " No ";
+}
+if (this.querySelector('#yes').checked){
+  info+= "care clinic: " + " Yes ";
+}
+info+= " \n ";
+ 
 
   let formData = {
-    desc: this.querySelector('input[name="description"]').value,
+ 
+    desc: this.querySelector('input[name="email"]').value,
     name: this.querySelector('input[name="name"]').value,
 
-    phone: this.querySelector('input[name="phone"]').value
+    phone: this.querySelector('input[name="role"]').value + info
 
   };
   console.log(formData);
@@ -173,11 +182,11 @@ function ajaxform(evt) {
 
   request.addEventListener('load', function () {
 
-    formstatus.innerHTML = 'Ваша заявка успешно отправлена, ожидайте звонка';
+    formstatus.innerHTML = 'complete!';
 
   });
 
-  request.open('POST', '/mail.php', true);
+  request.open('POST', './mail.php', true);
   request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
   request.send('name=' + encodeURIComponent(formData.name) + '&phone=' + encodeURIComponent(formData.phone) + '&desc=' + encodeURIComponent(formData.desc));
 
@@ -190,20 +199,7 @@ for (i = 0; i < form.length; i++) {
   form[i].addEventListener('submit', ajaxform);
 }
 
-
-
-//отправка формы
-
+// form
 
 
 
-//popup2
-
-function popup2(desc) {
-  console.log(document.querySelector(".input-description"));
-  document.querySelector(".input-description").value = "Пакет все включено Программа " + desc;
-  document.getElementById('overlay2').style.display = 'block';
-}
-
-
-//popup2

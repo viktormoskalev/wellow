@@ -35,6 +35,12 @@ line-height: 30px;
       text-decoration: underline;
     }
    }
+
+  &-copy{
+margin: 20px 0;
+    color: rgba(255, 255, 255, 0.298);
+
+  }
 }
 
 
@@ -48,7 +54,9 @@ line-height: 30px;
 
 @media screen and (min-width: $breakpoint-l){
   .footer{
-
+    &-copy{
+      margin-top: 50px;
+    }
      .grid{
        justify-content: space-between;
        align-items: flex-start;
@@ -61,6 +69,12 @@ line-height: 30px;
   
 }
 @media screen and (min-width: $breakpoint-xxl){
+.footer{
+
+  &-copy{
+    margin-top: 200px;
+  }
+}
 
   
 }
