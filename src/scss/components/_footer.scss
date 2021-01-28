@@ -1,0 +1,66 @@
+.footer{
+  padding: 40px 10px;
+  background-color:#000;
+  color:white;
+
+   .grid{
+     justify-content: center;
+     align-items: center;
+   }
+   &-logo{
+     width: 155px;
+   }
+
+   &-nav{
+     display: flex;
+    &-list{
+      list-style-type: none;
+      padding: 0 10px;
+    }
+   }
+   .footer-nav-title{
+font-size: 13px;
+font-style: normal;
+font-weight: 500;
+line-height: 15px;
+letter-spacing: -0.2px;
+color: rgba(255, 255, 255, 0.5);
+   }
+
+   .footer-nav-item{
+margin-top: 5px;
+font-size: 15px;
+line-height: 30px;
+    &:hover{
+      text-decoration: underline;
+    }
+   }
+}
+
+
+
+
+
+@media screen and (min-width: $breakpoint-m){
+
+  
+}
+
+@media screen and (min-width: $breakpoint-l){
+  .footer{
+
+     .grid{
+       justify-content: space-between;
+       align-items: flex-start;
+     }
+    }
+}
+
+@media screen and (min-width: $breakpoint-xl){
+
+  
+}
+@media screen and (min-width: $breakpoint-xxl){
+
+  
+}

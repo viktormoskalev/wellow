@@ -1,0 +1,58 @@
+@for $i from 1 through 6 {
+    .width-1-#{$i}{
+        width: 100%/ $i;
+    }
+      }
+
+   @mixin wid($size, $breakpoint) {
+    @media screen and (min-width: $breakpoint){
+        @for $i from 1 through 6 {
+            .width-1-#{$i}#{$size}{
+                width: 100%/ $i;
+            }
+              }
+  
+    }
+    
+  }
+
+  
+  
+ @include wid(-m ,$breakpoint-m);
+ @include wid(-l ,$breakpoint-l);
+ @include wid(-xl,$breakpoint-xl);
+
+
+@media screen and (min-width: $breakpoint-m){
+
+  .width-2-5-m{
+      width: 40%;
+  }
+  .width-3-5-m{
+      width: 60%;
+  }
+}
+
+@media screen and (min-width: $breakpoint-l){
+    .width-2-5-l{
+        width: 40%;
+    }
+    .width-3-5-l{
+        width: 60%;
+    }
+  
+}
+
+@media screen and (min-width: $breakpoint-xl){
+    .width-2-5-xl{
+        width: 40%;
+    }
+    .width-3-5-xl{
+        width: 60%;
+    }
+  
+}
+@media screen and (min-width: $breakpoint-xxl){
+
+  
+}

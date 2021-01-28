@@ -1,0 +1,61 @@
+$main-button:#E9484C;
+
+$main-button-hover:darken($main-button,20%);
+
+
+// @keyframes radial-pulse {
+//     0% {
+//       box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.5);
+//     }
+   
+//     100% {
+//       box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+//     }
+//   }
+  
+
+//   .pulse{
+//     animation: radial-pulse 1s infinite;
+//   }
+
+
+.button{
+    width: 100%;
+    display: inline-block;
+    background-color: $main-button;
+    border: 2px solid #CD060B;
+    font-size: 24px;
+    color:white;
+    border-radius: 10px;
+    padding: 20px 22px;
+    cursor: pointer;
+  }
+  
+  .button-arrow-right{
+ 
+    &::after{
+      content:"  ";
+      display: inline-block;
+      width: 30px;
+      margin-left: 11px;
+      height: 20px;
+      background-image: url(../images/arrow-to-right.svg);
+      background-repeat: no-repeat;
+    }
+  }
+  .button:hover{
+    
+    background-color: $main-button-hover;
+  }
+  
+  
+ 
+
+
+
+  @media screen and (min-width: $breakpoint-m){
+
+  .button{
+    width: auto;
+  }
+  }

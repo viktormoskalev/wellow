@@ -1,0 +1,130 @@
+.card-platform{
+    padding: 10px;
+    &-img{
+       height: 35px;
+       img{
+           object-fit: contain;
+       }
+    }
+    &-description{
+        font-family: Syne;
+font-size: 18px;
+letter-spacing: 0px;
+text-align: center;
+margin: 5px 0;
+    }
+}
+
+
+.card-description{
+    margin-bottom: 10px;
+   height: 400px;
+    padding:25px 15px;
+    display: flex;
+    justify-content: center;
+flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background: #FFFFFF;
+    border: 0.5px solid #E0DDDD;
+    box-shadow: 0px 3px 50px -17px #D7D1ED;
+    border-radius: 15px;
+
+    &-img{
+        flex:0 0 auto;
+        margin-right: 20px;
+        height: 100px;
+        width: 100px;
+    }
+
+    &-title{
+        margin: 20px 0 ;
+        color: #292930;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 25px;
+        letter-spacing: -0.4px;
+    }
+    &-description{
+        margin: 10px 0;
+        font-size: 20px;
+        line-height: 26px;
+        color: #444444;
+    }
+}
+
+
+@media screen and (min-width: $breakpoint-m){
+    .card-platform{
+  
+        &-img{
+           height: 35px;
+                }
+        &-description{
+
+    font-size: 21px;
+    line-height: 23px;
+   
+        }
+    }
+    .card-description{
+        margin-bottom: 10px;
+        padding:25px 30px;
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        justify-content: flex-start;
+        text-align: left;
+        align-items: center;
+           
+
+    
+        &-title{
+            margin: 10px 0 ;
+            color: #292930;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 25px;
+            letter-spacing: -0.4px;
+        }
+        &-description{
+            margin: 10px 0;
+            font-size: 20px;
+            line-height: 26px;
+            color: #444444;
+        }
+    }
+
+
+}
+
+
+
+
+
+@media screen and (min-width: $breakpoint-xl){
+    .card-platform{
+        &-img{
+           height: 45px;
+        }
+        &-description{
+    font-size: 28px;
+    line-height: 30px;
+           }
+    }
+  
+
+
+.card-description-compress{
+    display: flex;
+    width:max-content;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 100%;
+    
+    }
+}
+@media screen and (min-width: $breakpoint-xxl){
+
+  
+}

@@ -1,0 +1,50 @@
+
+
+.header{
+    z-index: 999;
+background-color: rgb(253, 253, 253);    
+    transition: 0.3s;
+border-bottom: solid #F1F1F1 1px;
+    &-content{
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+    align-items: center;
+    }
+
+    .logo{
+        img{
+            object-fit: contain;
+   width: 200px;
+        height: auto;
+        }
+
+    }
+}
+
+.fixed-header{
+position: fixed;
+top:0;
+left:0;
+right: 0;
+}
+
+
+@media screen and (min-width: $breakpoint-m){
+
+  
+}
+
+@media screen and (min-width: $breakpoint-l){
+
+  
+}
+
+@media screen and (min-width: $breakpoint-xl){
+
+  
+}
+@media screen and (min-width: $breakpoint-xxl){
+
+  
+}

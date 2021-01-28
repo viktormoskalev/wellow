@@ -1,0 +1,85 @@
+
+$breakpoint-s:320px;
+$breakpoint-m:480px;
+$breakpoint-l:767px;
+$breakpoint-xl:991px;
+$breakpoint-xxl:1200px;
+
+body{
+  background-color: rgb(199, 199, 199);
+  // for popup noscroll
+  font-family: Inter;
+  scroll-behavior: smooth;
+}
+
+.wrapper{
+  z-index: 0;
+
+  background-color: #fff;
+ 
+}
+
+html , body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+figure{
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+  img {
+    width: 100%;
+    height: 100%;
+    // object-fit: cover;
+  }
+
+
+
+
+@media screen and (min-width: $breakpoint-m){
+  .container{
+    padding:0 40px;
+  }
+  
+}
+
+@media screen and (min-width: $breakpoint-l){
+  .container{
+    padding:0 70px;
+  }
+  
+}
+
+@media screen and (min-width: $breakpoint-xl){
+
+  
+}
+@media screen and (min-width: $breakpoint-xxl){
+
+  
+}

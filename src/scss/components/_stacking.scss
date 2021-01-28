@@ -1,0 +1,28 @@
+
+
+@media screen and (max-width: $breakpoint-m){
+  .js-stack-cards__item{
+    background-color: #fff;
+        position: sticky;
+        top:100px;
+    overflow: hidden;
+    
+      }
+    
+      .stack-cards__item {
+        display: block;
+    
+    
+    
+    transform-origin: center top;
+    }
+  
+}
+@media screen and (min-width: $breakpoint-m){
+  .js-stack-cards__item{
+      transform: none;
+    }
+
+}
+
+

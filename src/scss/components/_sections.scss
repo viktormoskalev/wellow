@@ -1,0 +1,254 @@
+
+
+.section{
+
+    padding: 50px 5px;
+    text-align: center;
+    &-title{
+        font-family: Syne;
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: 50px;
+margin-top: 0;
+
+    }
+
+    &-dark{
+        background: linear-gradient(250.78deg, rgba(235, 239, 247, 0.196) 9.4%, rgba(255, 255, 255, 0.329813) 51.43%, rgba(240, 242, 247, 0.4) 98.02%);
+border: 1px solid #F2F2F2;
+    }
+
+
+    &-description{
+        font-family: Inter;
+font-size: 25px;
+font-style: normal;
+font-weight: 400;
+line-height: 36px;
+letter-spacing: -0.025em;
+
+
+    }
+}
+
+.section-hero{
+    .scroll-to-explore{
+        a{
+            &::before{
+                content: "";
+                margin-bottom: -3px;
+                display: inline-block;
+                height: 18px;
+                width: 20px;
+                background-size: contain;
+                background-image: url(../images/scroll.svg);
+                background-repeat: no-repeat;
+            }
+           display: inline-block;
+           line-height: 24px;
+           padding: 40px 0;
+           font-size: 16px; 
+        }
+    }
+    .section-title{
+        font-family: Syne;
+        font-size: 42px;
+        
+        font-style: normal;
+        line-height: 42px;
+        letter-spacing: -0.04em;
+ 
+    }
+    .section-description{
+        font-family: Inter;
+        font-size: 29px;
+        letter-spacing: -1px;
+     }
+}
+
+.section-platform{
+    background: linear-gradient(180deg, #260866 0%, #150536 100%);
+    box-shadow: 0px 0px 70px -21px #686A97;
+    .section-title-number{
+        font-family: Inter;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 1;
+        letter-spacing: -0.05em;
+        color:#CD6F00;
+    }
+    .platform-container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        color:white;
+        padding:20px 20px;
+        position:relative;       
+        border-radius: 40px;
+        margin-bottom: 40px;
+          &::before{
+              filter: blur(70px);
+        content: "";
+        display:block;
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background: rgba(222, 223, 238, 0.04);
+    }
+
+
+    }
+    .section-title{
+        color:white;
+    }
+    .section-description{
+        color:white;
+    }
+}
+
+
+.section-talk{
+color:white;
+background: #351D88;
+
+}
+
+.section-about{
+
+    &-title{
+        margin-top: 10px;
+font-family: Syne;
+font-size: 82px;
+font-weight: 600;
+line-height: 90px;
+letter-spacing: -0.04em;
+    }
+    &-undertitle{
+        margin-top: 10px;
+        font-family: Syne;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 34px;
+        letter-spacing: -0.8px;
+        text-align: left;
+
+    }
+    &-description{
+        font-family: Inter;
+font-size: 21px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: -0.8px;
+text-align: left;
+
+    }
+}
+
+.section-privacy{
+
+    &-title{
+font-weight: 600;
+font-size: 82px;
+line-height: 110%;
+letter-spacing: -0.04em;
+color: #1A1A1A;
+
+
+
+    }
+    font-size: 24px;
+line-height: 30px;
+letter-spacing: -0.8px;
+    color: #515151;
+    text-align: left;
+
+}
+
+@media screen and (min-width: $breakpoint-m){
+
+.section-about{
+    text-align: left;
+}
+
+    .section-hero{
+        .section-title{
+
+            font-size: 42px;
+
+            line-height: 42px;
+
+        }
+        .section-description{
+
+            font-size: 15px;
+
+         }
+    }
+  
+}
+
+@media screen and (min-width: $breakpoint-l){
+
+    .section-platform{
+        .section-title-number{
+
+            font-size: 100px;
+
+        }
+    }
+
+    .section{
+        padding:80px 0;
+    }
+.section-hero{
+    text-align: left;
+}
+
+
+    .section-platform{
+        .platform-container{
+            padding:45px 100px;
+        }
+    }
+  
+}
+
+@media screen and (min-width: $breakpoint-xl){
+    .section-hero{
+        .section-title{
+
+            font-size: 65px;
+
+            line-height: 65px;
+
+        }
+        .section-description{
+
+            font-size: 29px;
+
+         }
+    }
+  
+}
+@media screen and (min-width: $breakpoint-xxl){
+    .section-hero{
+        .section-title{
+
+            font-size: 82px;
+
+            line-height: 82px;
+
+        }
+        .section-description{
+
+            font-size: 29px;
+
+         }
+    }
+  
+}
