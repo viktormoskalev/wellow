@@ -2,6 +2,12 @@
 
 .section{
 
+    .grid-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
     padding: 50px 5px;
     text-align: center;
     &-title{
@@ -52,6 +58,7 @@ letter-spacing: -0.025em;
         }
     }
     .section-title{
+        
         font-family: Syne;
         font-size: 42px;
         
@@ -193,6 +200,16 @@ letter-spacing: -0.8px;
 }
 
 @media screen and (min-width: $breakpoint-l){
+    .section-stacking-2-cards{
+        max-width:581px ;
+        margin-left: auto;
+   
+    }
+    .section-stacking-3-cards{
+        max-width:625px ;
+        margin-right: auto;
+   
+    }
 
     .section-platform{
         .section-title-number{
@@ -203,26 +220,46 @@ letter-spacing: -0.8px;
     }
 
     .section{
-        padding:80px 0;
+        padding:60px 0;
+        &-title{
+            font-size: 50px;
+            
+        }
     }
 .section-hero{
     text-align: left;
+    .section-title{
+        margin-top: 130px;
+    }
 }
 
 
     .section-platform{
+        padding-bottom: 190px;
         .platform-container{
             padding:45px 100px;
+        }
+        .section-description{
+            text-align: left;
+        }
+        .section-title{
+            text-align: left;
         }
     }
   
 }
 
 @media screen and (min-width: $breakpoint-xl){
+
+
+
     .section-hero{
+        padding-bottom: 180px;
         .section-title{
 
-            font-size: 65px;
+            margin-bottom: 33px;
+            letter-spacing: 3px;
+            font-size: 95px;
 
             line-height: 65px;
 
@@ -236,6 +273,12 @@ letter-spacing: -0.8px;
   
 }
 @media screen and (min-width: $breakpoint-xxl){
+
+ .stacking{
+     .section{
+         padding: 110px 0;
+     }
+ }
     .section-hero{
         .section-title{
 
@@ -249,6 +292,13 @@ letter-spacing: -0.8px;
             font-size: 29px;
 
          }
+    }
+
+    .section-platform{
+        .section-title{
+            font-size: 50px;
+            letter-spacing: 2px;
+        }
     }
   
 }
