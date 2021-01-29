@@ -8,7 +8,7 @@ body .popup-open {
 }
 
 .popup-open+.popup-background {
-    background-color: rgba(190, 190, 190, 0.826);
+    background-color: rgba(255, 255, 255, 0.826);
     position: fixed;
     top: 0;
     left: 0;
@@ -29,7 +29,7 @@ transition:0.3s;
     z-index: 1001;
     left: 50%;
     transform: translate(-50%, -50%);
-    top: -100%;
+    top: -200%;
 
     .radio-btn-container {
         display: flex;
@@ -47,6 +47,7 @@ transition:0.3s;
     }
 
     .message {
+        font-family: Inter;
         padding: 20px;
         height: 60px;
         max-width: 386px;
@@ -56,6 +57,10 @@ transition:0.3s;
         border: 1px solid #E3E6E9;
         box-sizing: border-box;
         border-radius: 16px;
+        &:focus{
+            outline: none;
+            box-shadow: 0px 0px 5px 5px #b4acd2;
+        }
     }
 
     .radio-label {
@@ -69,12 +74,19 @@ transition:0.3s;
         align-items: center;
         margin: 0 10px;
 
-        &:hover {
-            background-color: rgb(232, 232, 247)
+        &:focus{
+            outline: none;
+            box-shadow: 0px 0px 5px 5px #b4acd2;
         }
+            &:hover {
+                background-color: rgb(232, 232, 247)
+            }
+     
+ 
     }
 
     &-close {
+        transition:0.3s;
         border-radius: 50%;
         padding: 0;
         display: block;
@@ -84,6 +96,18 @@ transition:0.3s;
         width: 42px;
         background-color: inherit;
         cursor: pointer;
+        img{
+            &:focus{
+                outline: none;
+               transform:rotate(15deg);
+            }
+            &:hover{
+                outline: none;
+                transform:rotate(15deg);
+            }
+        }
+
+     
     }
 
     .input-container {
@@ -100,6 +124,7 @@ transition:0.3s;
         }
 
         input {
+            font-family: Inter;
             max-width: 386px;
             position: relative;
             padding: 14px 65px;
@@ -107,6 +132,10 @@ transition:0.3s;
             border: 1px solid #E3E6E9;
             margin-bottom: 10px;
             border-radius: 16px;
+            &:focus{
+                outline: none;
+                box-shadow: 0px 0px 5px 5px #b4acd2;
+            }
         }
     }
 
@@ -174,6 +203,10 @@ transition:0.3s;
         &:hover {
             background-color: #5036B3;
             color: white;
+        }
+        &:focus{
+            outline: none;
+            box-shadow: 0px 0px 5px 5px #b4acd2;
         }
     }
 }

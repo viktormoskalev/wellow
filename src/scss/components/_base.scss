@@ -23,7 +23,6 @@ scroll-behavior: smooth;
 html , body{
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
 }
 
 
@@ -44,6 +43,9 @@ a{
   text-decoration: none;
   color: inherit;
 }
+
+
+
 
 .container{
   width: 100%;
@@ -76,6 +78,8 @@ figure{
   
 }
 
+
+
 @media screen and (min-width: $breakpoint-l){
   .container{
     padding:0 70px;
@@ -93,3 +97,14 @@ figure{
     order:1 !important;
   }
 }
+
+
+// max!!!!
+@media screen and (max-width: $breakpoint-l){
+  .hide-m{
+    display: none !important;
+  }
+    
+  }
+
+  // max!!!!
